@@ -8,3 +8,13 @@ def es_par(n: int) -> bool:
     """
     return n % 2 == 0
 
+def es_multiplo_de(n: int, m: int) -> bool:
+
+    """
+    Devuelve True si 'n' es múltiplo de 'm'; en caso contrario, False.
+    Un entero 'n' es múltiplo de otro entero 'm' si el residuo de dividir 'n' entre 'm' es 0.
+    """
+    if m == 0:
+        return False
+    else: 
+        return n % m == 0
